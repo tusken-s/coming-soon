@@ -1,0 +1,17 @@
+{
+  "name": "tuskens-coming-soon",
+  "version": "1.0.0",
+  "description": "Coming soon page for the house.",
+  "main": "index.js",
+  "repository": "https://github.com/tusken-s/coming-soon",
+  "author": "Malek Boubakri <malekbouba@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "pm2:run": "yarn; pm2 start ./ --name coming-soon",
+    "pm2:update": "git pull; yarn; pm2 restart coming-soon; pm2 reset coming-soon"
+  }
+}

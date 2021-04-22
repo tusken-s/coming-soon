@@ -47,5 +47,5 @@ Temporary Items
 
 ### Example user template template
 ### Example user template
-
-# IntelliJ project files
+/package-lock.json
+/yarn.lock
