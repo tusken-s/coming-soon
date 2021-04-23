@@ -53,6 +53,11 @@ height: 280px;
 position: relative;
 }
 
+.logo_box .logo {
+    width: 192px;
+    height: auto;
+}
+
 h1{
 padding: 12px 70px 12px 20px;
 position: absolute;
