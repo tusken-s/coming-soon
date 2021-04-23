@@ -49,3 +49,4 @@ Temporary Items
 ### Example user template
 /package-lock.json
 /yarn.lock
+/node_modules/
