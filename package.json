@@ -1,6 +1,6 @@
 {
   "name": "tuskens-coming-soon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Coming soon page for the house.",
   "main": "index.js",
   "repository": "https://github.com/tusken-s/coming-soon",
@@ -13,5 +13,8 @@
     "start": "node index.js",
     "pm2:run": "yarn; pm2 start ./ --name coming-soon",
     "pm2:update": "git pull; yarn; pm2 restart coming-soon; pm2 reset coming-soon"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
   }
 }
