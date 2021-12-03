@@ -105,11 +105,13 @@ section {
   display: block;
 }
 body {
+  font-family: "Raleway", sans-serif;
+  background: #000;
+  width: auto;
+  height: 100%;
   margin: 0;
   padding: 0;
-  background: #000;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
   overflow: hidden;
   text-align: center;
 }
@@ -136,11 +138,6 @@ table {
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  background: #0c122a;
-  width: auto;
-  height: 100%;
 }
 a,
 a:visited {
