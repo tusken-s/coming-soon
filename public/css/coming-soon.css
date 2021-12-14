@@ -76,13 +76,14 @@ body {
 .space {
   background: transparent url(../img/bg.png) repeat 0 0 fixed;
   background-size: auto;
+  /*width: 100%;*/
 }
 
 div#shim {
   visibility: hidden;
-  width: 100%;
-  height: 50%;
-  margin-top: -140px;
+ /* width: 100%;
+  height: 50%;*/
+  margin-top: -40px;
   float: left;
 }
 
@@ -91,16 +92,21 @@ div#content {
   height: 280px;
   margin: 0 auto;
   clear: both;
-  top: -140px;
+  /*top: -140px;*/
   position: static;
+  margin-top: 0;/*170px;*/
 }
 
 .logo_box {
-  width: 349px;
+  width: 280px;/*349px*/
   float: left;
   border-right: 1px solid #303030;
   height: 280px;
   position: relative;
+  text-align: left;
+  padding: 0;
+  margin-top: 150px;
+  margin-top: 10px;
 }
 
 .logo_box .logo {
@@ -132,7 +138,10 @@ h3 {
   float: left;
   width: 500px;
   height: 95px;
-  padding: 25px;
+  padding: 25px 0 0;
+  margin-top: 10px;
+  font-size: 14px;
+  
 }
 
 .main_box p {
@@ -158,7 +167,7 @@ h2 strong {
   font-size: 70px;
 }
 
-h2 span {
+h2 p {
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-size: 16px;
@@ -286,4 +295,35 @@ footer a {
   margin: 0 25px;
   line-height: 2;
   text-decoration: none;
+}
+/*******************responsive***********/
+
+@media screen and (max-width:375px) {
+  
+ 
+  .logo_box {
+    margin-top: 25px;
+    margin-top: 0;
+    border: 0px;
+
+  }
+  .main_box{
+     
+    padding: 0;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 80px;
+    margin-top: 0;
+  
+}
+ .main_box p{
+
+  margin-right: 200px;
+  margin-top: 50px;
+  font-size: 17px;
+}
+.main_box h2 span{
+  margin-right: 80px;
+}
+
 }
