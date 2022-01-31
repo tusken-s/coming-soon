@@ -11,6 +11,9 @@ app.get("/", (req, res) =>
 app.get("/terms", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/terms.html"))
 );
+app.get("/freelance", (req, res) =>
+  res.sendFile(path.join(__dirname, "/public/freelance.html"))
+);
 app.get("/privacy-policy", (req, res) =>
   res.sendFile(path.join(__dirname, "/public/privacy-policy.html"))
 );
