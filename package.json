@@ -4,7 +4,11 @@
   "description": "Coming soon page for the house.",
   "main": "index.js",
   "repository": "https://github.com/tusken-s/coming-soon",
-  "author": "Malek Boubakri <malekbouba@gmail.com>",
+  "author": {
+    "name": "Tuskens MEA Team",
+    "email": "hello@tuskens.com",
+    "url": "https://tuskens.digital"
+  },
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
