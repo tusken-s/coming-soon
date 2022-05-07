@@ -81,7 +81,7 @@ body {
 div#shim {
   visibility: hidden;
   width: 100%;
-  height: 50%;
+  height: 45vh;
   margin-top: -140px;
   float: left;
 }
