@@ -162,8 +162,9 @@ a img {
   height: 650px;
   background: transparent url(../img/astronaut.png) no-repeat;
   position: relative;
-  margin-left: 150px;
+  margin-left: 10%;
   top: 20%;
+  zoom: 80%;
 }
 .space {
   background: transparent url(../img/bg.png) repeat 0 0 fixed;
