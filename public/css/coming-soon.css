@@ -188,57 +188,20 @@ ul.info li p {
   margin: 0;
 }
 
-ul.info li p.social a.tw {
-  width: 28px;
-  height: 28px;
-  margin-right: 8px;
-  float: left;
-}
-
-ul.info li p.social a.tw {
-  width: 28px;
-  height: 28px;
-  margin-right: 8px;
-  float: left;
-}
-
-ul.info li p.social a.fb {
-  width: 28px;
-  height: 28px;
-  float: left;
-  margin-right: 8px;
-}
-
-ul.info li p.social a.li {
-  width: 28px;
-  height: 28px;
-  float: left;
-}
-
+ul.info li p.social a.gh,
+ul.info li p.social a.tw,
+ul.info li p.social a.fb,
+ul.info li p.social a.li,
 ul.info li p.social a.im {
   width: 28px;
   height: 28px;
   float: left;
 }
 
-ul.info li p.social a.tw:hover {
-  width: 28px;
-  height: 28px;
-  float: left;
-}
-
-ul.info li p.social a.fb:hover {
-  width: 28px;
-  height: 28px;
-  float: left;
-}
-
-ul.info li p.social a.li:hover {
-  width: 28px;
-  height: 28px;
-  float: left;
-}
-
+ul.info li p.social a.gh:hover,
+ul.info li p.social a.tw:hover,
+ul.info li p.social a.fb:hover,
+ul.info li p.social a.li:hover,
 ul.info li p.social a.li:hover {
   width: 28px;
   height: 28px;
@@ -276,10 +239,12 @@ footer {
   font-weight: lighter;
   cursor: help;
 }
+
 footer:hover {
   opacity: 1;
   transition: all 1s ease;
 }
+
 footer a {
   width: 250px;
   color: #ffe400 !important;
