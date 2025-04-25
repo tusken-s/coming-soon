@@ -1,0 +1,111 @@
+/* Home page specific styles */
+.content {
+  width: 940px;
+  height: 280px;
+  margin: 0 auto;
+  clear: both;
+  top: -140px;
+  position: static;
+}
+
+.shim {
+  visibility: hidden;
+  width: 100%;
+  height: 45vh;
+  margin-top: -140px;
+  float: left;
+}
+
+.logoBox {
+  width: 349px;
+  float: left;
+  border-right: 1px solid #303030;
+  height: 280px;
+  position: relative;
+}
+
+.logoBox .logo {
+  width: 192px;
+  height: auto;
+}
+
+.logoHeading {
+  padding: 12px 70px 12px 20px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 10%;
+  float: left;
+  color: #fff;
+  letter-spacing: -1px;
+  font-size: 38px;
+}
+
+.mainBox {
+  float: left;
+  width: 500px;
+  height: 95px;
+  padding: 25px;
+}
+
+.mainBox p {
+  color: #fff;
+}
+
+.heading {
+  font-family: "Bangers", cursive;
+  color: #ffe400;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.heading strong {
+  font-family: "Bangers", cursive;
+  font-size: 70px;
+}
+
+.heading span {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+.info {
+  width: 100%;
+  padding: 0;
+  margin: 20px 0 0 0;
+  float: left;
+}
+
+.info li {
+  margin-bottom: 20px;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.info li p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+  float: left;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.social a {
+  width: 28px;
+  height: 28px;
+  float: left;
+}
+
+.social a:hover {
+  opacity: 0.8;
+}
