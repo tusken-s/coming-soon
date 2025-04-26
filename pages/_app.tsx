@@ -1,31 +1,39 @@
-import { useEffect } from 'react';
-import type { AppProps } from 'next/app';
-import Head from 'next/head';
-import Script from 'next/script';
-import '../styles/globals.css';
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import Script from "next/script";
+import { Bangers, Raleway } from "next/font/google";
+import "../styles/globals.css";
+
+const raleway = Raleway({
+  weight: ["200", "400", "700"],
+  display: "swap",
+});
+
+const bangers = Bangers({
+  weight: "400",
+});
+
+declare global {
+  interface Window {
+    fbAsyncInit: any;
+    FB: any;
+    dataLayer: any;
+    $: any;
+  }
+}
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    // Any global client-side scripts that need to run on every page
-  }, []);
-
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="facebook-domain-verification" content="xcsktjg7mkogiqp2gb3jmxvkzwt0qs" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#000" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bangers&family=Raleway:wght@200;400;700&display=swap"
-          rel="stylesheet"
-        />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
+
+      {/* Global site tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-Y9QYJ4E3DC"
+      />
 
       {/* Microsoft Clarity */}
       <Script id="microsoft-clarity" strategy="afterInteractive">
@@ -38,33 +46,8 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </Script>
 
-      {/* Facebook SDK */}
-      <Script id="facebook-sdk" strategy="afterInteractive">
-        {`
-          window.fbAsyncInit = function () {
-            FB.init({
-              xfbml: true,
-              version: "v10.0",
-            });
-          };
-          (function (d, s, id) {
-            var js,
-              fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          })(document, "script", "facebook-jssdk");
-        `}
-      </Script>
-
       {/* Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-Y9QYJ4E3DC"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag() {
@@ -75,16 +58,16 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </Script>
 
-      <Component {...pageProps} />
+      <Script id="animation-script" strategy="lazyOnload">
+        {`
+          $(".space").pan({ fps: 40, speed: 1, dir: "right", depth: 50 });
+          $("#astronaut")
+            .sprite({ fps: 30, no_of_frames: 1 })
+            .spRandom({ top: 30, bottom: 200, left: 30, right: 200 });
+        `}
+      </Script>
 
-      {/* Facebook Chat Plugin */}
-      <div id="fb-root"></div>
-      <div
-        className="fb-customerchat"
-        data-attribution="setup_tool"
-        data-page_id="103326721561833"
-        data-theme_color="#ffe400"
-      ></div>
+      <Component {...pageProps} />
     </>
   );
 }

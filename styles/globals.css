@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* Reset styles */
 body,
 div,
@@ -86,7 +88,7 @@ a {
 
 /* Space background */
 .space {
-  background: transparent url(/img/bg.png) repeat 0 0 fixed;
+  background: transparent url("/img/bg.png") repeat 0 0 fixed;
   background-size: auto;
 }
 
