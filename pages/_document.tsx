@@ -1,6 +1,5 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import Script from "next/script";
-import React from "react";
 
 export default function Document() {
   return (
@@ -37,11 +36,11 @@ export default function Document() {
         <meta content="#000" name="theme-color" />
       </Head>
       <body>
-        <Main />
-        <NextScript />
+      <Main />
+      <NextScript />
 
-        <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
-        <Script src="/js/spritely.min.js" strategy="beforeInteractive" />
+      <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
+      <Script src="/js/spritely.min.js" strategy="beforeInteractive" />
       </body>
     </Html>
   );

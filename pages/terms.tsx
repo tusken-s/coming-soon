@@ -1,7 +1,5 @@
-import React from "react";
 import Head from "next/head";
-import Link from "next/link";
-import Script from "next/script";
+import Footer from "../components/Footer";
 
 const Terms = () => {
   return (
@@ -140,13 +138,7 @@ const Terms = () => {
           </div>
         </article>
 
-        <footer>
-          <Link href="/privacy-policy">Privacy policy</Link>|
-          <Link href="/terms">Terms & conditions</Link>
-          <br />
-          Tuskens ©,
-          {new Date().getFullYear()}
-        </footer>
+        <Footer />
       </>
     </>
   );

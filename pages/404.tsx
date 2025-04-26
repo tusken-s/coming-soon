@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/404.module.css";
+import Footer from "../components/Footer";
 
 const NotFound: NextPage = () => {
   return (
@@ -58,12 +59,7 @@ const NotFound: NextPage = () => {
         </div>
       </div>
 
-      <footer>
-        <Link href="/privacy-policy">Privacy policy</Link>|
-        <Link href="/terms">Terms & conditions</Link>
-        <br />
-        Tuskens ©, {new Date().getFullYear()}
-      </footer>
+      <Footer />
     </>
   );
 };

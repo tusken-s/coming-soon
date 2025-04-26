@@ -6,11 +6,11 @@ import "../styles/globals.css";
 
 const raleway = Raleway({
   weight: ["200", "400", "700"],
-  display: "swap",
+  display: "swap"
 });
 
 const bangers = Bangers({
-  weight: "400",
+  weight: "400"
 });
 
 declare global {
