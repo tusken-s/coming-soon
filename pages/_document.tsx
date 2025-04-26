@@ -35,12 +35,10 @@ export default function Document() {
         <link href="/site.webmanifest" rel="manifest" />
         <meta content="#000" name="theme-color" />
       </Head>
-      <body>
+
+      <body className="text-gray-50 font-[Raleway] h-full w-full overflow-y-auto">
         <Main />
         <NextScript />
-
-        <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
-        <Script src="/js/spritely.min.js" strategy="beforeInteractive" />
       </body>
     </Html>
   );

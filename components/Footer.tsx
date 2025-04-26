@@ -1,28 +1,43 @@
+import { FC } from "react";
 import Link from "next/link";
 
 interface FooterProps {
   showStatusBadge?: boolean;
 }
 
-const Footer: React.FC<FooterProps> = ({ showStatusBadge = false }) => {
+const Footer: FC<FooterProps> = ({ showStatusBadge = false }) => {
   return (
-    <footer>
-      {showStatusBadge && (
-        <div>
+    <footer className="w-full fixed bottom-[50px] flex justify-center">
+      <div className="w-[25%] opacity-25 transition-all duration-600 ease-in-out text-center text-gray-50 text-sm font-light cursor-help hover:opacity-100">
+        {showStatusBadge ? (
           <iframe
             src="https://tuskens.instatus.com/embed-status/dark-sm"
             width="230"
-            height="61"
+            height="60"
             frameBorder="0"
             scrolling="no"
-            className="border-none"
-          ></iframe>
+            className="mx-auto"
+          />
+        ) : (
+          <></>
+        )}
+        <div className="flex justify-center w-full">
+          <Link
+            className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+            href="/privacy-policy"
+          >
+            Privacy policy
+          </Link>
+          |
+          <Link
+            className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+            href="/terms"
+          >
+            Terms & conditions
+          </Link>
         </div>
-      )}
-      <Link href="/privacy-policy">Privacy policy</Link>|
-      <Link href="/terms">Terms & conditions</Link>
-      <br />
-      Tuskens ©, {new Date().getFullYear()}
+        <p>Tuskens ©, {new Date().getFullYear()}</p>
+      </div>
     </footer>
   );
 };

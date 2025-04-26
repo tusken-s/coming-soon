@@ -2,27 +2,40 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
 import { Bangers, Raleway } from "next/font/google";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 import "../styles/globals.css";
 
 const raleway = Raleway({
   weight: ["200", "400", "700"],
+  subsets: ["latin"],
   display: "swap",
 });
 
 const bangers = Bangers({
   weight: "400",
+  subsets: ["latin"],
 });
 
 declare global {
   interface Window {
-    fbAsyncInit: any;
-    FB: any;
-    dataLayer: any;
-    $: any;
+    dataLayer: unknown;
   }
 }
 
 export default function App({ Component, pageProps }: AppProps) {
+  const { pathname } = useRouter();
+
+  useEffect(() => {
+    const isStaticPage =
+      pathname === "/terms" || pathname === "/privacy-policy";
+    if (isStaticPage) document.body.classList.add("no-bg-animation");
+    else document.body.classList.remove("no-bg-animation");
+    return () => {
+      document.body.classList.remove("no-bg-animation");
+    };
+  }, [pathname]);
+
   return (
     <>
       <Head>
@@ -30,14 +43,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Component {...pageProps} />
-
-      <Script id="animation-script" strategy="lazyOnload">
-        {`
-          $("#astronaut")
-            .sprite({ fps: 30, no_of_frames: 1 })
-            .spRandom({ top: 30, bottom: 200, left: 30, right: 200 });
-        `}
-      </Script>
 
       {/* Global site tag (gtag.js) - Google Analytics */}
       <Script
