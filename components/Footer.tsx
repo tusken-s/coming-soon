@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ showStatusBadge = false }) => {
             height="61"
             frameBorder="0"
             scrolling="no"
-            style={{ border: "none" }}
+            className="border-none"
           ></iframe>
         </div>
       )}

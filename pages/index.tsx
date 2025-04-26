@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
-import "../styles/coming-soon.css";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -19,74 +19,95 @@ const Home = () => {
         />
       </Head>
 
-      <body>
-        <div id="shim"></div>
-        <div id="content">
-          <div className="logo_box">
-            <h1>
-              <img
-                className="logo"
-                alt="Logo"
-                src="/img/android-chrome-192x192.png"
-              />
-            </h1>
+      <>
+        <div className="invisible w-full h-[45vh] mt-[-140px]"></div>
+        <div className="w-[940px] h-[280px] mx-auto clear-both top-[-140px] static">
+          <div className="w-[38%] float-left border-r border-[#303030] h-[280px] relative flex justify-center items-center">
+            <Image
+              width={192}
+              height={192}
+              alt="Logo"
+              src="/img/android-chrome-192x192.png"
+            />
           </div>
-          <div className="main_box">
-            <h2>
-              <strong>Our website</strong>
+          <div className="w-[62%] float-left h-[95px] p-[25px]">
+            <h2 className="font-[Bangers] text-[#ffe400] text-[40px] mb-[20px]">
+              <strong className="font-[Bangers] text-[70px]">
+                Our website
+              </strong>
               <br />
               is coming soon.
-              <span>
+              <span className="font-[Raleway] text-[#ffffff] text-[16px] leading-[26px] italic">
                 <br />
                 In the mean time connect with us with the information below.
               </span>
             </h2>
-            <p>
+            <p className="text-[#ffffff]">
               We are a digital house that delivers a wide range of high-tech
               services and solutions for businesses worldwide.
             </p>
-            <ul className="info">
-              <li>
-                <p className="social">
+            <ul className="w-full float-left p-0 mt-[20px] mb-0">
+              <li className="mb-[20px] clear-both float-left w-full">
+                <p className="flex justify-between leading-[20px] w-[55%]">
                   <a
-                    className="gh"
                     href="https://github.com/tusken-s"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img alt="GitHub logo" src="/img/github.svg" />
+                    <Image
+                      width={28}
+                      height={28}
+                      alt="GitHub logo"
+                      src="/img/github.svg"
+                    />
                   </a>
                   <a
-                    className="li"
                     href="https://www.linkedin.com/company/tuskens"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img alt="Linkedin logo" src="/img/linkedin.svg" />
+                    <Image
+                      width={28}
+                      height={28}
+                      alt="Linkedin logo"
+                      src="/img/linkedin.svg"
+                    />
                   </a>
                   <a
-                    className="tw"
                     href="https://twitter.com/join_tusken_s"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img alt="Twitter logo" src="/img/twitter.svg" />
+                    <Image
+                      width={28}
+                      height={28}
+                      alt="Twitter logo"
+                      src="/img/twitter.svg"
+                    />
                   </a>
                   <a
-                    className="fb"
                     href="https://www.facebook.com/join.tusken.s"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img alt="Facebook logo" src="/img/facebook.svg" />
+                    <Image
+                      width={28}
+                      height={28}
+                      alt="Facebook logo"
+                      src="/img/facebook.svg"
+                    />
                   </a>
                   <a
-                    className="im"
                     href="https://www.instagram.com/tusken.s/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img alt="Instagram logo" src="/img/instagram.svg" />
+                    <Image
+                      width={28}
+                      height={28}
+                      alt="Instagram logo"
+                      src="/img/instagram.svg"
+                    />
                   </a>
                 </p>
               </li>
@@ -94,7 +115,7 @@ const Home = () => {
           </div>
         </div>
         <Footer showStatusBadge />
-      </body>
+      </>
     </>
   );
 };

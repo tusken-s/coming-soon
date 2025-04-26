@@ -36,11 +36,11 @@ export default function Document() {
         <meta content="#000" name="theme-color" />
       </Head>
       <body>
-      <Main />
-      <NextScript />
+        <Main />
+        <NextScript />
 
-      <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
-      <Script src="/js/spritely.min.js" strategy="beforeInteractive" />
+        <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
+        <Script src="/js/spritely.min.js" strategy="beforeInteractive" />
       </body>
     </Html>
   );

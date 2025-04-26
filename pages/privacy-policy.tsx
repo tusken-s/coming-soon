@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
-import "../styles/docs.css";
 
 const PrivacyPolicy = () => {
   return (
@@ -19,16 +18,18 @@ const PrivacyPolicy = () => {
         />
       </Head>
 
-      <>
+      <div className="m-0 py-[100px] px-[15%] font-[Raleway] text-[#efefef] animate-none bg-[0_0]">
         {/* Privacy policy */}
-        <article>
+        <article className="text-[#efefef]">
           <div>
             <div>
               <div>
-                <h1 className="big">Privacy Policy</h1>
+                <h1 className="font-[Bangers] text-[70px] text-[#ffe400]">
+                  Privacy Policy
+                </h1>
                 <p>Updated at 2021-11-14</p>
                 <br />
-                <h1>
+                <h1 className="text-[#ffe400]">
                   <strong>Tuskens's</strong> Facebook app
                 </h1>
                 <p>
@@ -43,15 +44,21 @@ const PrivacyPolicy = () => {
               {/* /header */}
 
               <div>
-                <h2>Owner and Data Controller</h2>
+                <h2 className="text-[#ffe400]">Owner and Data Controller</h2>
                 <p>BP912, Sousse Bab bhar, 4000, Tunisia</p>
                 <p>
-                  <strong>Owner contact email:</strong> hello@tuskens.com
+                  <strong>Owner contact email:</strong>{" "}
+                  <a
+                    href="mailto:hello@tuskens.com"
+                    className="no-underline text-inherit after:content-['📎'] after:ml-[5px]"
+                  >
+                    hello@tuskens.com
+                  </a>
                 </p>
               </div>
 
               <div>
-                <h2>Types of Data collected</h2>
+                <h2 className="text-[#ffe400]">Types of Data collected</h2>
 
                 <p>
                   The owner does not provide a list of Personal Data types
@@ -98,7 +105,7 @@ const PrivacyPolicy = () => {
         </article>
 
         <Footer />
-      </>
+      </div>
     </>
   );
 };

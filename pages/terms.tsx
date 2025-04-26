@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
-import "../styles/docs.css";
 
 const Terms = () => {
   return (
@@ -19,16 +18,16 @@ const Terms = () => {
         />
       </Head>
 
-      <>
+      <div className="py-[100px] px-[15%] font-[Raleway] text-[#efefef] animate-none bg-[0_0]">
         {/* Terms & Conditions */}
-        <article>
-          <div style={{ zIndex: 100 }}>
-            <h1 className="big" style={{ marginTop: "10px" }}>
+        <article className="text-[#efefef]">
+          <div className="z-[100]">
+            <h1 className="font-[Bangers] text-[70px] text-[#ffe400] mt-[10px]">
               Terms &amp; Conditions
             </h1>
             <p>Updated at 2021-11-14</p>
             <br />
-            <h1>General Terms</h1>
+            <h1 className="text-[#ffe400]">General Terms</h1>
             <p>
               <span>
                 By accessing and placing an order with us, you confirm that you
@@ -56,7 +55,7 @@ const Terms = () => {
             <p>
               <br />
             </p>
-            <h1>License</h1>
+            <h1 className="text-[#ffe400]">License</h1>
             <p>
               <span>
                 Tuskens grants you a revocable, non-exclusive, non-
@@ -84,7 +83,7 @@ const Terms = () => {
             <p>
               <br />
             </p>
-            <h1>Definitions and key terms</h1>
+            <h1 className="text-[#ffe400]">Definitions and key terms</h1>
             <p>
               <span>For this Terms &amp; Conditions:</span>
             </p>
@@ -139,7 +138,7 @@ const Terms = () => {
         </article>
 
         <Footer />
-      </>
+      </div>
     </>
   );
 };
