@@ -30,10 +30,30 @@ td {
   padding: 0;
 }
 
+html {
+  background: #000;
+}
+
+body {
+  background: transparent url(../public/img/bg.png) repeat 0 0 fixed;
+  background-size: auto;
+  animation: panBackground 20s linear infinite;
+}
+
+@keyframes panBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 fieldset,
 img {
   border: 0;
@@ -72,7 +92,6 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background: #000;
   font-family: "Raleway", sans-serif;
 }
 
@@ -84,12 +103,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-/* Space background */
-.space {
-  background: transparent url("/img/bg.png") repeat 0 0 fixed;
-  background-size: auto;
 }
 
 /* Footer styles */

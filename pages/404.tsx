@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/404.module.css";
 import Footer from "../components/Footer";
+import "../styles/404.css";
 
 const NotFound: NextPage = () => {
   return (
@@ -22,31 +22,24 @@ const NotFound: NextPage = () => {
         />
       </Head>
 
-      <div className={styles.container}>
-        <div id="astronaut" className={styles.astronaut}>
-          <Image
-            className={styles.logo}
-            src="/img/android-chrome-192x192.png"
-            alt="Logo"
-            width={192}
-            height={192}
-          />
-          <div className={styles.text1}>
+      <>
+        <div id="astronaut">
+          <div id="text_1">
             Houston,
             <br />
             we have a<br />
             problem!
           </div>
-          <div className={styles.text2}>Error 404!</div>
-          <div className={styles.text3}>
+          <div id="text_2">Error 404!</div>
+          <div id="text_3">
             The universe
             <br />
             you are looking for
             <br />
             doesn't exist
           </div>
-          <div className={styles.text4}>Try to visit another dimension</div>
-          <div className={styles.text5}>
+          <div id="text_4">Try to visit another dimension</div>
+          <div id="text_5">
             <ul>
               <li>
                 <Link href="/">Home</Link>
@@ -57,7 +50,7 @@ const NotFound: NextPage = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </>
 
       <Footer />
     </>

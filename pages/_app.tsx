@@ -29,6 +29,16 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
+      <Component {...pageProps} />
+
+      <Script id="animation-script" strategy="lazyOnload">
+        {`
+          $("#astronaut")
+            .sprite({ fps: 30, no_of_frames: 1 })
+            .spRandom({ top: 30, bottom: 200, left: 30, right: 200 });
+        `}
+      </Script>
+
       {/* Global site tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
@@ -47,7 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Script>
 
       {/* Google Analytics */}
-      <Script id="google-analytics" strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag() {
@@ -57,17 +67,6 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag("config", "G-Y9QYJ4E3DC");
         `}
       </Script>
-
-      <Script id="animation-script" strategy="lazyOnload">
-        {`
-          $(".space").pan({ fps: 40, speed: 1, dir: "right", depth: 50 });
-          $("#astronaut")
-            .sprite({ fps: 30, no_of_frames: 1 })
-            .spRandom({ top: 30, bottom: 200, left: 30, right: 200 });
-        `}
-      </Script>
-
-      <Component {...pageProps} />
     </>
   );
 }

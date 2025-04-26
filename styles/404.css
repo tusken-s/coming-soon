@@ -1,0 +1,86 @@
+a,
+a:visited {
+  color: #6d6c6c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#astronaut {
+  width: 730px;
+  height: 650px;
+  background: transparent url(../public/img/astronaut.png) no-repeat;
+  position: relative;
+  margin-left: 10%;
+  top: 20%;
+  zoom: 80%;
+}
+
+/* Text */
+#text_1 {
+  font-family: "Bangers", cursive;
+  font-size: 30px;
+  color: #393939;
+  line-height: 28px;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+#text_2 {
+  font-family: "Bangers", cursive;
+  font-size: 90px;
+  color: #2d2d2d;
+  width: 380px;
+  padding-right: 10px;
+  position: absolute;
+  top: 5px;
+  left: 95px;
+}
+
+#text_3 {
+  font-family: "Bangers", cursive;
+  font-size: 38px;
+  color: #393939;
+  line-height: 30px;
+  text-align: right;
+  width: 310px;
+  padding-right: 2px;
+  position: absolute;
+  top: 75px;
+  left: 330px;
+}
+
+#text_4 {
+  font-family: "Bangers", cursive;
+  color: #393939;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 180px;
+  left: 392px;
+}
+
+#text_5 {
+  font-family: "Raleway", sans-serif;
+  color: #393939;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 230px;
+  left: 450px;
+}
+
+#text_5 ul li {
+  display: inline;
+  list-style-type: none;
+  border-left: 1px solid #6d6c6c;
+  padding: 0 0 0 2em;
+  margin: 0 2em 0 0;
+}
+
+#text_5 ul li:first-child {
+  border-left: 0;
+}

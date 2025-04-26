@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 100px 15%;
+  font-family: "Raleway", sans-serif;
+  color: #efefef;
+  animation: none !important;
+  background-position: 0 0 !important;
+}
+
+article a {
+  text-decoration: none;
+  color: inherit;
+}
+
+article a::after {
+  content: "📎";
+  margin: 0 0 0 5px;
+}
+
+.big {
+  font-family: "Bangers", cursive;
+  font-size: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffe400;
+}

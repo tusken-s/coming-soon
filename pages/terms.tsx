@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
+import "../styles/docs.css";
 
 const Terms = () => {
   return (
@@ -16,7 +17,6 @@ const Terms = () => {
           content="Tuskens is a digital house that delivers a wide range of high-tech services and solutions for businesses worldwide."
           property="og:type"
         />
-        <link href="/css/docs.css" rel="stylesheet" type="text/css" />
       </Head>
 
       <>
