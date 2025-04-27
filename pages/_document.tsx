@@ -15,18 +15,18 @@ export default function Document() {
         <meta content="https://tuskens.com" property="og:url" />
         <meta content="/favicon-32x32.png" property="og:image" />
         <link
-          href="/img/apple-touch-icon.png"
+          href="/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
         />
         <link
-          href="/img/favicon-32x32.png"
+          href="/favicon-32x32.png"
           rel="icon"
           sizes="32x32"
           type="image/png"
         />
         <link
-          href="/img/favicon-16x16.png"
+          href="/favicon-16x16.png"
           rel="icon"
           sizes="16x16"
           type="image/png"
