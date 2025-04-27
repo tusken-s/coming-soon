@@ -8,8 +8,8 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = ({ showStatusBadge = false, isFixed = true }) => {
   return (
-    <footer className={`w-full ${isFixed ? 'fixed bottom-[50px]' : ''} flex justify-center`}>
-      <div className="w-[25%] opacity-25 transition-all duration-600 ease-in-out text-center text-gray-50 text-sm font-light cursor-help hover:opacity-100">
+    <footer className={`w-full ${isFixed ? 'fixed bottom-[50px] opacity-25 hover:opacity-100 transition-all duration-600 ease-in-out' : 'mb-10'} flex justify-center`}>
+      <div className="w-[25%] text-center text-gray-50 text-sm font-light cursor-help">
         {showStatusBadge ? (
           <iframe
             src="https://tuskens.instatus.com/embed-status/dark-sm"
