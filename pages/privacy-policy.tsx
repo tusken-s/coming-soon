@@ -100,7 +100,7 @@ const PrivacyPolicy = () => {
         <br />
       </article>
 
-      <Footer />
+      <Footer isFixed={false} />
     </>
   );
 };

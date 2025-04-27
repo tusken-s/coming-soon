@@ -851,7 +851,7 @@ const Terms = () => {
         </ul>
       </article>
 
-      <Footer />
+      <Footer isFixed={false} />
     </>
   );
 };

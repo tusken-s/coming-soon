@@ -3,11 +3,12 @@ import Link from "next/link";
 
 interface FooterProps {
   showStatusBadge?: boolean;
+  isFixed?: boolean;
 }
 
-const Footer: FC<FooterProps> = ({ showStatusBadge = false }) => {
+const Footer: FC<FooterProps> = ({ showStatusBadge = false, isFixed = true }) => {
   return (
-    <footer className="w-full fixed bottom-[50px] flex justify-center">
+    <footer className={`w-full ${isFixed ? 'fixed bottom-[50px]' : ''} flex justify-center`}>
       <div className="w-[25%] opacity-25 transition-all duration-600 ease-in-out text-center text-gray-50 text-sm font-light cursor-help hover:opacity-100">
         {showStatusBadge ? (
           <iframe
