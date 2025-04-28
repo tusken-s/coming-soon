@@ -26,7 +26,7 @@ const Home = () => {
             width={192}
             height={192}
             alt="Logo"
-            src="/img/android-chrome-192x192.png"
+            src="/android-chrome-192x192.png"
             className="mr-14"
           />
         </div>
