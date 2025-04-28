@@ -6,9 +6,14 @@ interface FooterProps {
   isFixed?: boolean;
 }
 
-const Footer: FC<FooterProps> = ({ showStatusBadge = false, isFixed = true }) => {
+const Footer: FC<FooterProps> = ({
+  showStatusBadge = false,
+  isFixed = true,
+}) => {
   return (
-    <footer className={`w-full ${isFixed ? 'fixed bottom-[50px] opacity-25 hover:opacity-100 transition-all duration-600 ease-in-out' : 'mb-10'} flex justify-center`}>
+    <footer
+      className={`w-full ${isFixed ? "fixed bottom-[50px] opacity-25 hover:opacity-100 transition-all duration-600 ease-in-out" : "mb-10"} flex justify-center`}
+    >
       <div className="w-[25%] text-center text-gray-50 text-sm font-light cursor-help">
         {showStatusBadge ? (
           <iframe

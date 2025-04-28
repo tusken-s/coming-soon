@@ -21,16 +21,18 @@ const NotFound: NextPage = () => {
       </Head>
 
       <>
-        <div 
+        <div
           className="relative w-[730px] h-[650px] bg-[url('../public/img/astronaut.png')] bg-no-repeat bg-transparent ml-[10%] top-[20%] scale-[80%] animate-[floatAstronaut_10s_ease-in-out_infinite]"
-          style={{
-            '--random-x1': `${Math.floor(Math.random() * 170) + 30}px`,
-            '--random-y1': `${Math.floor(Math.random() * 170) + 30}px`,
-            '--random-x2': `${Math.floor(Math.random() * 170) + 30}px`,
-            '--random-y2': `${Math.floor(Math.random() * 170) + 30}px`,
-            '--random-x3': `${Math.floor(Math.random() * 170) + 30}px`,
-            '--random-y3': `${Math.floor(Math.random() * 170) + 30}px`,
-          } as React.CSSProperties}
+          style={
+            {
+              "--random-x1": `${Math.floor(Math.random() * 170) + 30}px`,
+              "--random-y1": `${Math.floor(Math.random() * 170) + 30}px`,
+              "--random-x2": `${Math.floor(Math.random() * 170) + 30}px`,
+              "--random-y2": `${Math.floor(Math.random() * 170) + 30}px`,
+              "--random-x3": `${Math.floor(Math.random() * 170) + 30}px`,
+              "--random-y3": `${Math.floor(Math.random() * 170) + 30}px`,
+            } as React.CSSProperties
+          }
         >
           <div className="absolute top-[100px] left-[30px] font-[Bangers] text-[30px] text-gray-900 leading-[28px]">
             Houston,

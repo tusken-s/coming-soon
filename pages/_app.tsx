@@ -8,12 +8,14 @@ import "../styles/globals.css";
 
 const raleway = Raleway({
   weight: ["200", "400", "700"],
+  variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
 
 const bangers = Bangers({
   weight: "400",
+  variable: "--font-title",
   subsets: ["latin"],
 });
 
@@ -40,6 +42,14 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <style jsx global>{`
+          html {
+            font-family: ${raleway.variable};
+          }
+          h1, h2, h3, h4, h5, h5 {
+            font-family: ${bangers.variable};
+          }
+        `}</style>
       </Head>
 
       <Component {...pageProps} />

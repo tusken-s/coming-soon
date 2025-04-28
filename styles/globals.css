@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme inline {
+  --font-body: var(--font-body);
+  --font-title: var(--font-title);
+}
+
 @layer components {
   html,
   body {
