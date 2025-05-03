@@ -113,7 +113,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Footer showStatusBadge />
+      <Footer showStatus />
     </>
   );
 };
