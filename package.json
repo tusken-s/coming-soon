@@ -22,6 +22,7 @@
     "pm2:update": "git pull; yarn; yarn build; pm2 restart coming-soon; pm2 reset coming-soon"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.19.2",
     "@tailwindcss/postcss": "^4.1.4",
     "next": "^15.3.1",
     "postcss": "^8.5.3",

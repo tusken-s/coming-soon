@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Footer from "../components/Footer";
 import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -19,7 +20,9 @@ const Home = () => {
         />
       </Head>
 
-      <aside className="h-[15vh] md:h-[25vh] mb-10"></aside>
+      <Header />
+
+      <aside className="h-[8vh] md:h-[18vh] mb-8"></aside>
       <div className="h-[280px] w-full md:w-[55%] flex mx-auto">
         <div className="w-[35%] h-full border-r border-stone-700 hidden md:flex justify-center items-center">
           <Image

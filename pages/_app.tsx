@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Bangers, Raleway } from "next/font/google";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { ClerkProvider } from "@clerk/nextjs";
 import "../styles/globals.css";
 
 const raleway = Raleway({
@@ -46,13 +47,20 @@ export default function App({ Component, pageProps }: AppProps) {
           html {
             font-family: ${raleway.variable};
           }
-          h1, h2, h3, h4, h5, h5 {
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h5 {
             font-family: ${bangers.variable};
           }
         `}</style>
       </Head>
 
-      <Component {...pageProps} />
+      <ClerkProvider {...pageProps}>
+        <Component {...pageProps} />
+      </ClerkProvider>
 
       {/* Global site tag (gtag.js) - Google Analytics */}
       <Script
