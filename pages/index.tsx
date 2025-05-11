@@ -19,9 +19,9 @@ const Home = () => {
         />
       </Head>
 
-      <aside className="h-[25vh] mb-10"></aside>
-      <div className="h-[280px] w-[55%] flex mx-auto">
-        <div className="w-[35%] h-full border-r border-stone-700 flex justify-center items-center">
+      <aside className="h-[15vh] md:h-[25vh] mb-10"></aside>
+      <div className="h-[280px] w-full md:w-[55%] flex mx-auto">
+        <div className="w-[35%] h-full border-r border-stone-700 hidden md:flex justify-center items-center">
           <Image
             width={192}
             height={192}
@@ -30,7 +30,7 @@ const Home = () => {
             className="mr-14"
           />
         </div>
-        <div className="w-[65%] h-full ml-8">
+        <div className="w-[85%] md:w-[65%] h-full ml-8">
           <h1 className="font-[Bangers] text-yellow-300 text-[70px] font-extrabold -mb-6">
             Our website
           </h1>

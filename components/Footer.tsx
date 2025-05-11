@@ -15,7 +15,7 @@ const Footer: FC<FooterProps> = ({ showStatus = false, isFixed = true }) => {
     <footer
       className={`w-full ${isFixed ? "fixed bottom-[50px] opacity-25 hover:opacity-100 transition-all duration-600 ease-in-out" : "mb-10"} flex justify-center`}
     >
-      <div className="w-[25%] text-center text-gray-50 text-sm font-light cursor-help">
+      <div className="text-center text-gray-50 text-sm font-light cursor-help">
         {showStatus ? (
           <iframe
             src="https://tuskens.instatus.com/embed-status/dark-sm"
@@ -32,14 +32,14 @@ const Footer: FC<FooterProps> = ({ showStatus = false, isFixed = true }) => {
           {path === "/privacy-policy" ? (
             <>
               <Link
-                className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+                className="w-fit text-yellow-300 mx-[25px] leading-[2] no-underline"
                 href="/"
               >
                 Home
               </Link>
               |
               <Link
-                className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+                className="w-fit text-yellow-300 mx-[25px] leading-[2] no-underline"
                 href="/terms"
               >
                 Terms & conditions
@@ -48,14 +48,14 @@ const Footer: FC<FooterProps> = ({ showStatus = false, isFixed = true }) => {
           ) : path === "/terms" ? (
             <>
               <Link
-                className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+                className="w-fit text-yellow-300 mx-[25px] leading-[2] no-underline"
                 href="/"
               >
                 Home
               </Link>
               |
               <Link
-                className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+                className="w-fit text-yellow-300 mx-[25px] leading-[2] no-underline"
                 href="/privacy-policy"
               >
                 Privacy policy
@@ -64,14 +64,14 @@ const Footer: FC<FooterProps> = ({ showStatus = false, isFixed = true }) => {
           ) : (
             <>
               <Link
-                className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+                className="w-fit text-yellow-300 mx-[25px] leading-[2] no-underline"
                 href="/privacy-policy"
               >
                 Privacy policy
               </Link>
               |
               <Link
-                className="w-[50%] text-yellow-300 mx-[25px] leading-[2] no-underline"
+                className="w-fit text-yellow-300 mx-[25px] leading-[2] no-underline"
                 href="/terms"
               >
                 Terms & conditions
