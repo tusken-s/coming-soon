@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
         `}</style>
       </Head>
 
-      <ClerkProvider {...pageProps}>
+      <ClerkProvider {...pageProps} afterSignOutUrl="/">
         <Component {...pageProps} />
       </ClerkProvider>
 
